@@ -1,5 +1,4 @@
 #require_relative "/lib/bank_account.rb"
-
 class Transfer
   attr_accessor :sender, :receiver, :status, :amount
   def initialize(sender, receiver, amount)
@@ -11,8 +10,6 @@ class Transfer
   end  
 
   def valid?
-    # if sender
-    # end
+    
   end
-
 end
