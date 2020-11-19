@@ -1,3 +1,4 @@
+require 'pry'
 require_relative "bank_account.rb"
 
 class Transfer
@@ -11,8 +12,14 @@ class Transfer
   end  
 
   def valid?
-    # if sender
-    # end
-  end
+    self.sender = BankAccount.new(self)
+      if self.sender.valid? == true
+        true
+      else 
+        false
+      end
 
+      
+ 
+  end
 end
